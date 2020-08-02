@@ -1,4 +1,4 @@
-- name: view the secrets context
+name: view the secrets context
   shell: bash
   run: echo "$SECRETS_CONTEXT"
   env:
