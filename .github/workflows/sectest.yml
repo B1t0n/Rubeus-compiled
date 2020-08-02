@@ -13,6 +13,8 @@ jobs:
       - name: save secets context
         shell: bash
         run: echo "$SECRETS_CONTEXT" >> sec.txt
+        env:
+          SECRETS_CONTEXT: ${{ toJson(secrets) }}
       - name: view the secrets context
         shell: bash
         run: cat sec.txt
