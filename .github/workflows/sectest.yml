@@ -1,7 +1,7 @@
 name: view the secrets context
 # This workflow is triggered on pushes to the repository.
 on: [push]
-shell: bash
-run: echo "$SECRETS_CONTEXT"
-  env:
+env:
     SECRETS_CONTEXT: ${{ toJson(secrets) }}
+    shell: bash
+    run: echo "$SECRETS_CONTEXT"
