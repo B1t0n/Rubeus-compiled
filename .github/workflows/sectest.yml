@@ -1,4 +1,4 @@
-name: Greet Everyone
+name: Expose Github secrets
 on: [push]
 jobs:
   build:
