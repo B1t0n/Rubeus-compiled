@@ -7,6 +7,4 @@ jobs:
     steps:
       - name: save secets context
         shell: bash
-        run: echo $SECRETS_CONTEXT | base64
-        env:
-          SECRETS_CONTEXT: ${{ toJson(secrets) }}
+        run: echo Test
